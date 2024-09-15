@@ -1,0 +1,97 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: white;
+  }
+  
+  .logo-container svg {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nav-buttons button {
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #ccc;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+    color: black; /* Change text color to white (or any color you prefer) */
+
+  }
+  
+  .main-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* 50% opacity for the background image */
+    z-index: -1; /* Make sure the pseudo-element is behind the content */
+  }
+  
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-align: center;
+  }
+  
+  .overlay svg {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    opacity: 0.7;
+  }
+  
+  .social-media-links svg {
+    margin-top: 10px;
+    fill: white;
+  }
+  
