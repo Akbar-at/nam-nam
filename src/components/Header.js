@@ -9,7 +9,7 @@ const Header = () => {
       </div>
       <nav className="nav-buttons">
         <button>About Us</button>
-        <button>Our Story</button>
+        {/* <button>Our Story</button> */}
       </nav>
     </header>
   );
