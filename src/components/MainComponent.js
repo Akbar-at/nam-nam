@@ -8,7 +8,7 @@ const MainContent = () => {
       <div className="overlay">
         <Logo size={300} color="white" />
         {/* <SvgGame/> */}
-        <h1>Coming Soon</h1>
+        <h1>Work in Progress</h1>
       </div>
     </main>
   );
